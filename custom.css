@@ -1,34 +1,30 @@
 /* ==========================================================================
-   Fonts: Plus Jakarta Sans (300, 400, 500, 600)
+   Fonts: PlusJakartaSans (300, 400, 500, 600)
    ========================================================================== */
 @font-face {
-  font-family: "Plus Jakarta Sans";
+  font-family: "PlusJakartaSans-Light";
   src: url("fonts/PlusJakartaSans-Light.ttf") format("truetype");
-  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Plus Jakarta Sans";
+  font-family: "PlusJakartaSans-Regular";
   src: url("fonts/PlusJakartaSans-Regular.ttf") format("truetype");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Plus Jakarta Sans";
+  font-family: "PlusJakartaSans-Medium";
   src: url("fonts/PlusJakartaSans-Medium.ttf") format("truetype");
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Plus Jakarta Sans";
+  font-family: "PlusJakartaSans-SemiBold";
   src: url("fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -38,8 +34,7 @@
    ========================================================================== */
 .tendi-homepage {
   margin: 0;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
+  font-family: "PlusJakartaSans-Regular";
   color: #2c3444;
   background-color: #ffffff;
   line-height: 1.65;
@@ -51,8 +46,8 @@
    ========================================================================== */
 .section-heading-gradient {
   display: inline-block;
-  font-size: 2.35rem;
-  font-weight: 300;
+  font-size: 38px;
+  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0 0 18px;
   background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
@@ -65,8 +60,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "PlusJakartaSans-Medium";
   color: #1a2e59;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -84,7 +79,7 @@
   height: 20px;
   border-radius: 50%;
   border: 1px solid #1a2e59;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
@@ -108,7 +103,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -136,8 +131,8 @@
 }
 
 .carousel-counter {
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 13px;
+  font-family: "PlusJakartaSans-Medium";
   margin-left: 4px;
 }
 
@@ -154,20 +149,25 @@
    ========================================================================== */
 .site-header {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 0;
   width: 100%;
   z-index: 100;
 }
 
+.header-fluid {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .header-bar {
-  background-color: rgba(255, 255, 255, 0.96);
-  border-radius: 6px;
-  padding: 12px 26px;
+  background-color: #edf4fc;
+  border-radius: 12px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 6px 24px rgba(26, 46, 89, 0.08);
+  box-shadow: 0 8px 28px rgba(26, 46, 89, 0.08);
   position: relative;
 }
 
@@ -175,11 +175,11 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .header-logo {
   display: block;
-  height: 34px;
   width: auto;
   max-width: 100%;
 }
@@ -187,23 +187,28 @@
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 48px;
 }
 
 .header-nav-list {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 22px;
+  gap: 28px;
 }
 
 .header-nav-link {
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-family: "PlusJakartaSans-Regular";
   color: #1a2e59;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -215,46 +220,25 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 18px;
+  font-family: "PlusJakartaSans-Regular";
   color: #1a2e59;
+  flex-shrink: 0;
 }
 
-.header-search-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  padding: 0;
-  color: #1a2e59;
-  font-family: inherit;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.header-search-btn:hover {
-  color: #ea4f24;
-}
-
-.header-search-icon {
-  width: 14px;
-  height: 14px;
-}
-
-.header-action-divider {
-  color: #cbd5e1;
-}
-
-.header-contact-link {
+.header-action-link {
   color: #1a2e59;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
-.header-contact-link:hover {
+.header-action-link:hover {
   color: #ea4f24;
+}
+
+.header-action-divider {
+  color: #94a3b8;
 }
 
 .header-menu-toggle {
@@ -283,14 +267,26 @@
    2. Hero Banner Section
    ========================================================================== */
 .hero-banner {
-  background-image: url("images/banner-1.webp");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  min-height: 580px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  padding: 130px 0 90px;
+  padding-top: 24px;
 }
 
 .hero-container {
@@ -303,37 +299,43 @@
 
 .hero-content {
   text-align: left;
-  padding-left: 24px;
+  padding-left: 72px;
 }
 
 .hero-title {
-  margin: 0 0 10px;
-  line-height: 1.08;
+  margin: 0;
+  line-height: 1.05;
 }
 
 .hero-title-top {
   display: block;
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: #1a2e59;
-  margin-bottom: 4px;
+  font-size: 48px;
+  font-family: "PlusJakartaSansLight";
+  color: #000000;
+  letter-spacing: -0.5px;
+  line-height: 1.08;
+  margin-bottom: -4px;
 }
 
 .hero-title-main {
   display: inline-block;
-  font-size: 3.75rem;
-  font-weight: 600;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 85%);
+  font-size: 92px;
+  font-family: "PlusJakartaSansMedium";
+  letter-spacing: -1.5px;
+  line-height: 1.08;
+  padding-bottom: 10px;
+  background: linear-gradient(90deg, #ea4f24 0%, #ea4f24 12%, #1a2e59 75%, #1a2e59 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #1a2e59;
+  margin: -4px 0 0;
+  font-size: 22px;
+  font-family: "PlusJakartaSansLight";
+  color: #000000;
+  letter-spacing: -0.2px;
 }
 
 /* ==========================================================================
@@ -361,7 +363,7 @@
 }
 
 .intro-text {
-  font-size: 0.95rem;
+  font-size: 15px;
   color: #5a6475;
   margin: 0 0 22px;
 }
@@ -384,7 +386,7 @@
 }
 
 .advantage-text {
-  font-size: 0.95rem;
+  font-size: 15px;
   color: #2c3444;
   margin: 0 0 22px;
 }
@@ -423,8 +425,8 @@
 
 .competence-subtitle {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "PlusJakartaSans-Regular";
   color: #1a2e59;
 }
 
@@ -455,8 +457,8 @@
 
 .competence-card-title {
   margin: 0;
-  font-size: 0.92rem;
-  font-weight: 500;
+  font-size: 15px;
+  font-family: "PlusJakartaSans-Medium";
   color: #1a2e59;
   line-height: 1.4;
 }
@@ -477,22 +479,22 @@
 }
 
 .verticals-heading {
-  font-size: 2.35rem;
-  font-weight: 300;
+  font-size: 38px;
+  font-family: "PlusJakartaSans-Light";
   margin: 0 0 10px;
   color: #ffffff;
 }
 
 .verticals-tagline {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "PlusJakartaSans-Regular";
   color: #82b8f8;
   margin: 0 0 12px;
 }
 
 .verticals-description {
-  font-size: 0.88rem;
-  font-weight: 300;
+  font-size: 14px;
+  font-family: "PlusJakartaSans-Light";
   color: rgba(255, 255, 255, 0.84);
   margin: 0;
 }
@@ -535,15 +537,15 @@
 }
 
 .vertical-card-title {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 16px;
+  font-family: "PlusJakartaSans-Medium";
   color: #ffffff;
   margin: 0 0 8px;
 }
 
 .vertical-card-text {
-  font-size: 0.82rem;
-  font-weight: 300;
+  font-size: 13px;
+  font-family: "PlusJakartaSans-Light";
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
@@ -603,14 +605,14 @@
 }
 
 .service-title {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 15px;
+  font-family: "PlusJakartaSans-SemiBold";
   color: #1a2e59;
   margin: 0 0 4px;
 }
 
 .service-desc {
-  font-size: 0.84rem;
+  font-size: 13px;
   color: #5a6475;
   margin: 0;
 }
@@ -624,8 +626,8 @@
   align-items: center;
   gap: 10px;
   padding: 10px 28px;
-  font-size: 0.88rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "PlusJakartaSans-Medium";
   color: #ffffff;
   text-decoration: none;
   background: linear-gradient(90deg, #ea4f24 0%, #f17821 40%, #1a2e59 100%);
@@ -653,14 +655,14 @@
 }
 
 .dimensions-heading {
-  font-size: 2.35rem;
-  font-weight: 300;
+  font-size: 38px;
+  font-family: "PlusJakartaSans-Light";
   color: #1a2e59;
   margin: 0 0 16px;
 }
 
 .dimensions-intro {
-  font-size: 0.92rem;
+  font-size: 15px;
   color: #5a6475;
   margin: 0 0 28px;
 }
@@ -680,8 +682,8 @@
   width: 44px;
   padding: 4px 0;
   text-align: center;
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 13px;
+  font-family: "PlusJakartaSans-SemiBold";
   color: #ffffff;
   border-radius: 3px;
 }
@@ -708,14 +710,14 @@
 }
 
 .dimension-title {
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 15px;
+  font-family: "PlusJakartaSans-SemiBold";
   color: #ea4f24;
   margin: 0 0 4px;
 }
 
 .dimension-desc {
-  font-size: 0.82rem;
+  font-size: 13px;
   color: #5a6475;
   margin: 0;
 }
@@ -779,7 +781,7 @@
 }
 
 .stories-text {
-  font-size: 0.94rem;
+  font-size: 15px;
   color: #5a6475;
   margin: 0 0 20px;
 }
@@ -838,7 +840,7 @@
 }
 
 .testimonial-quote {
-  font-size: 0.94rem;
+  font-size: 15px;
   color: #2c3444;
   margin: 0 0 18px;
 }
@@ -902,15 +904,15 @@
 }
 
 .footer-address-label {
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: "PlusJakartaSans-Medium";
   color: rgba(255, 255, 255, 0.9);
   margin: 0 0 6px;
 }
 
 .footer-address-text {
-  font-size: 0.84rem;
-  font-weight: 300;
+  font-size: 13px;
+  font-family: "PlusJakartaSans-Light";
   color: rgba(255, 255, 255, 0.78);
   margin: 0;
   line-height: 1.6;
@@ -926,8 +928,8 @@
 }
 
 .footer-link {
-  font-size: 0.86rem;
-  font-weight: 400;
+  font-size: 14px;
+  font-family: "PlusJakartaSans-Regular";
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   transition: color 0.2s ease;
@@ -984,8 +986,8 @@
 .footer-copyright,
 .footer-credit {
   margin: 0;
-  font-size: 0.78rem;
-  font-weight: 300;
+  font-size: 12px;
+  font-family: "PlusJakartaSans-Light";
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -1003,6 +1005,7 @@
     top: calc(100% + 8px);
     left: 0;
     right: 0;
+    margin-left: 0;
     background-color: #ffffff;
     border-radius: 6px;
     padding: 20px 24px;
@@ -1031,7 +1034,7 @@
   }
 
   .hero-title-main {
-    font-size: 2.85rem;
+    font-size: 46px;
   }
 
   .dimensions-decagon {
@@ -1046,23 +1049,45 @@
 }
 
 @media (max-width: 767.98px) {
+  .header-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-bar {
+    padding: 12px 18px;
+  }
+
+  .header-logo {
+    height: 38px;
+  }
+
   .section-heading-gradient,
   .verticals-heading,
   .dimensions-heading {
-    font-size: 1.95rem;
+    font-size: 31px;
   }
 
-  .hero-banner {
-    min-height: 460px;
-    padding: 115px 0 60px;
+  .hero-bg-image {
+    min-height: 440px;
+    object-fit: cover;
+    object-position: left bottom;
+  }
+
+  .hero-overlay {
+    padding-top: 70px;
   }
 
   .hero-title-top {
-    font-size: 1.35rem;
+    font-size: 26px;
   }
 
   .hero-title-main {
-    font-size: 2.35rem;
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
   }
 
   .intro-section,

@@ -16,7 +16,7 @@
 
   <!-- 1. Header Section -->
   <header class="site-header" id="siteHeader">
-    <div class="container">
+    <div class="container-fluid header-fluid">
       <div class="header-bar">
         <a href="#heroBanner" class="header-brand">
           <img src="images/tendi-logo.webp" alt="TenDi Logo" class="header-logo" />
@@ -42,18 +42,12 @@
             <li class="header-nav-item"><a href="#dimensionsSection" class="header-nav-link">Quality</a></li>
             <li class="header-nav-item"><a href="#clientsSection" class="header-nav-link">Clients</a></li>
             <li class="header-nav-item"><a href="#storiesSection" class="header-nav-link">Resources</a></li>
-            <li class="header-nav-item"><a href="#siteFooter" class="header-nav-link">Careers</a></li>
+            <li class="header-nav-item"><a href="#siteFooter" class="header-nav-link">Locations</a></li>
           </ul>
           <div class="header-actions">
-            <button type="button" class="header-search-btn" id="searchToggle" aria-label="Search">
-              <svg class="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="7"></circle>
-                <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-              </svg>
-              <span>Search</span>
-            </button>
+            <a href="#siteFooter" class="header-action-link">Career</a>
             <span class="header-action-divider" aria-hidden="true">|</span>
-            <a href="#siteFooter" class="header-contact-link">Contact Us</a>
+            <a href="#siteFooter" class="header-action-link">Contact Us</a>
           </div>
         </nav>
       </div>
@@ -63,15 +57,18 @@
   <main>
     <!-- 2. Hero Banner Section -->
     <section class="hero-banner" id="heroBanner">
-      <div class="container hero-container">
-        <div class="row hero-row">
-          <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
-            <div class="hero-content">
-              <h1 class="hero-title">
-                <span class="hero-title-top">A Higher Dimension of</span>
-                <span class="hero-title-main">Engineering</span>
-              </h1>
-              <p class="hero-subtitle">Precision by Principle. Resilience by Design.</p>
+      <img src="images/banner-1.webp" alt="Modern architectural building and engineering blueprints" class="hero-bg-image" />
+      <div class="hero-overlay">
+        <div class="container hero-container">
+          <div class="row hero-row">
+            <div class="col-lg-6 offset-lg-6 col-md-7 offset-md-5">
+              <div class="hero-content">
+                <h1 class="hero-title">
+                  <span class="hero-title-top">A Higher Dimension of</span>
+                  <span class="hero-title-main">Engineering</span>
+                </h1>
+                <p class="hero-subtitle">Precision by Principle. Excellence by Design.</p>
+              </div>
             </div>
           </div>
         </div>
