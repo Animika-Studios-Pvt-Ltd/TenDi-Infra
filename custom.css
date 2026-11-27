@@ -27,15 +27,28 @@
   font-display: swap;
 }
 
-/* -------------------------------- Page Wrapper -------------------------------- */
-.tendi-homepage {
-  margin: 0;
-  font-family: "PlusJakartaSans-Regular";
-  color: #2c3444;
-  background-color: #ffffff;
-  line-height: 1.65;
+/* -------------------------------- Global Styles -------------------------------- */
+
+html, body {
   overflow-x: hidden;
+  box-sizing: border-box;
 }
+
+h2 {
+  font-family: "PlusJakartaSans-Light";
+  font-size: 60px;
+  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: "PlusJakartaSans-Regular";
+  font-size: 20px;
+  color: #212529;
+}
+
 
 /* -------------------------------- 1. Header Section -------------------------------- */
 .site-header {
@@ -69,7 +82,7 @@
   flex-shrink: 0;
 }
 
-.header-logo {
+.header-brand img {
   display: block;
   width: auto;
   max-width: 100%;
@@ -83,7 +96,7 @@
   margin-left: 48px;
 }
 
-.header-nav-list {
+.header-nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +107,7 @@
   gap: 28px;
 }
 
-.header-nav-link {
+.header-nav ul li a {
   font-size: 20px;
   font-family: "PlusJakartaSans-Regular";
   color: #1a2e59;
@@ -103,7 +116,7 @@
   transition: color 0.2s ease;
 }
 
-.header-nav-link:hover {
+.header-nav ul li a:hover {
   color: #ea4f24;
 }
 
@@ -117,18 +130,18 @@
   flex-shrink: 0;
 }
 
-.header-action-link {
+.header-actions a {
   color: #1a2e59;
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.2s ease;
 }
 
-.header-action-link:hover {
+.header-actions a:hover {
   color: #ea4f24;
 }
 
-.header-action-divider {
+.header-actions span {
   color: #94a3b8;
 }
 
@@ -146,7 +159,7 @@
   cursor: pointer;
 }
 
-.header-menu-bar {
+.header-menu-toggle span {
   display: block;
   width: 100%;
   height: 2px;
@@ -179,7 +192,7 @@
     display: flex;
   }
 
-  .header-nav-list {
+  .header-nav ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -197,7 +210,7 @@
     padding: 12px 18px;
   }
 
-  .header-logo {
+  .header-brand img {
     height: 38px;
   }
 }
@@ -209,7 +222,7 @@
   overflow: hidden;
 }
 
-.hero-bg-image {
+.hero-banner > img {
   display: block;
   width: 100%;
   height: auto;
@@ -242,12 +255,12 @@
   margin-left: -32px;
 }
 
-.hero-title {
+.hero-banner h1 {
   margin: 0;
   line-height: 1.05;
 }
 
-.hero-title-top {
+.hero-banner h1 span:first-child {
   display: block;
   font-size: 60px;
   font-family: "PlusJakartaSans-Light";
@@ -258,7 +271,7 @@
   margin-bottom: -4px;
 }
 
-.hero-title-main {
+.hero-banner h1 span:last-child {
   display: inline-block;
   font-size: 120px;
   font-family: "PlusJakartaSans-SemiBold";
@@ -274,7 +287,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.hero-subtitle {
+.hero-banner p {
   margin: 0;
   font-size: 32px;
   font-family: "PlusJakartaSans-Light";
@@ -292,14 +305,14 @@
     border-radius: 8px;
   }
 
-  .hero-title-main {
+  .hero-banner h1 span:last-child {
     font-size: 46px;
     margin-left: 0;
   }
 }
 
 @media (max-width: 767.98px) {
-  .hero-bg-image {
+  .hero-banner > img {
     min-height: 440px;
     object-fit: cover;
     object-position: left bottom;
@@ -309,18 +322,18 @@
     padding-top: 70px;
   }
 
-  .hero-title-top {
+  .hero-banner h1 span:first-child {
     font-size: 26px;
     white-space: normal;
   }
 
-  .hero-title-main {
+  .hero-banner h1 span:last-child {
     font-size: 48px;
     white-space: normal;
     margin-left: 0;
   }
 
-  .hero-subtitle {
+  .hero-banner p {
     font-size: 15px;
     white-space: normal;
   }
@@ -332,7 +345,7 @@
   padding: 78px 0;
 }
 
-.intro-row {
+.intro-section .row {
   align-items: center;
 }
 
@@ -341,72 +354,46 @@
   justify-content: center;
 }
 
-.intro-image {
+.intro-media img {
   display: block;
-  max-width: 440px;
-  width: 100%;
   height: auto;
 }
 
-.intro-heading {
+.intro-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
-  margin: 0 0 18px;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin: 0 0 10px;
 }
 
-.intro-text {
-  font-size: 15px;
-  color: #5a6475;
-  margin: 0 0 22px;
+.intro-section p {
+  margin-bottom: 0px;
 }
 
-.intro-link {
+.intro-section a {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-family: "PlusJakartaSans-Medium";
-  color: #1a2e59;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 18px;
+  font-family: "PlusJakartaSans-Regular";
+  color: #264aa0;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.intro-link:hover {
+.intro-section a:hover {
   color: #ea4f24;
 }
 
-.intro-arrow-circle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #1a2e59;
-  font-size: 12px;
+.intro-section a i {
+  font-size: 16px;
   line-height: 1;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  margin-top: 4px;
+  transition: transform 0.2s ease;
 }
 
-.intro-link:hover .intro-arrow-circle {
-  border-color: #ea4f24;
-  transform: translateX(3px);
-}
-
-@media (max-width: 767.98px) {
-  .intro-section {
-    padding: 54px 0;
-  }
-
-  .intro-heading {
-    font-size: 31px;
-  }
+.intro-section a:hover i {
+  transform: translateX(4px);
 }
 
 /* -------------------------------- 4. Tendi Advantage Section -------------------------------- */
@@ -416,7 +403,7 @@
   overflow: hidden;
 }
 
-.advantage-row {
+.advantage-section .row {
   align-items: center;
 }
 
@@ -424,25 +411,17 @@
   padding-bottom: 54px;
 }
 
-.advantage-heading {
+.advantage-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0 0 18px;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.advantage-text {
-  font-size: 15px;
-  color: #2c3444;
+.advantage-section p {
   margin: 0 0 22px;
 }
 
-.advantage-link {
+.advantage-section a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -453,11 +432,11 @@
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.advantage-link:hover {
+.advantage-section a:hover {
   color: #ea4f24;
 }
 
-.advantage-arrow-circle {
+.advantage-section a span:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -470,7 +449,7 @@
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.advantage-link:hover .advantage-arrow-circle {
+.advantage-section a:hover span:last-child {
   border-color: #ea4f24;
   transform: translateX(3px);
 }
@@ -481,7 +460,7 @@
   align-items: flex-end;
 }
 
-.advantage-image {
+.advantage-media img {
   display: block;
   max-width: 100%;
   max-height: 360px;
@@ -498,10 +477,6 @@
   .advantage-content {
     padding-bottom: 24px;
   }
-
-  .advantage-heading {
-    font-size: 31px;
-  }
 }
 
 /* -------------------------------- 5. Core Competence Section -------------------------------- */
@@ -515,22 +490,14 @@
   margin-bottom: 46px;
 }
 
-.competence-heading {
+.competence-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0 0 10px;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.competence-subtitle {
+.competence-header p {
   margin: 0;
-  font-size: 16px;
-  font-family: "PlusJakartaSans-Regular";
   color: #1a2e59;
 }
 
@@ -551,7 +518,7 @@
   margin-bottom: 16px;
 }
 
-.competence-icon {
+.competence-icon-wrap img {
   display: block;
   max-height: 68px;
   max-width: 100%;
@@ -559,7 +526,7 @@
   height: auto;
 }
 
-.competence-card-title {
+.competence-section h3 {
   margin: 0;
   font-size: 15px;
   font-family: "PlusJakartaSans-Medium";
@@ -570,10 +537,6 @@
 @media (max-width: 767.98px) {
   .competence-section {
     padding: 54px 0;
-  }
-
-  .competence-heading {
-    font-size: 31px;
   }
 }
 
@@ -590,9 +553,7 @@
   margin: 0 auto 52px;
 }
 
-.verticals-heading {
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
+.verticals-section h2 {
   margin: 0 0 10px;
   color: #ffffff;
 }
@@ -615,7 +576,7 @@
   row-gap: 44px;
 }
 
-.vertical-card {
+.verticals-section article {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
@@ -626,7 +587,7 @@
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-.vertical-card:hover {
+.verticals-section article:hover {
   transform: translateY(-4px);
   border-color: rgba(241, 120, 33, 0.6);
 }
@@ -641,23 +602,21 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.vertical-card-img {
+.vertical-card-thumb img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.vertical-card-title {
+.verticals-section article h3 {
   font-size: 16px;
   font-family: "PlusJakartaSans-Medium";
   color: #ffffff;
   margin: 0 0 8px;
 }
 
-.vertical-card-text {
-  font-size: 13px;
-  font-family: "PlusJakartaSans-Light";
+.verticals-section article p {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
@@ -670,7 +629,7 @@
   margin-top: 26px;
 }
 
-.verticals-carousel-btn {
+.verticals-controls button {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -686,12 +645,12 @@
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.verticals-carousel-btn:hover {
+.verticals-controls button:hover {
   background-color: #ea4f24;
   border-color: #ea4f24;
 }
 
-.verticals-carousel-counter {
+.verticals-controls span {
   font-size: 13px;
   font-family: "PlusJakartaSans-Medium";
   margin-left: 4px;
@@ -699,10 +658,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .verticals-heading {
-    font-size: 31px;
-  }
-
   .verticals-controls {
     justify-content: center;
   }
@@ -714,7 +669,7 @@
   padding: 78px 0;
 }
 
-.services-row {
+.services-section .row {
   align-items: center;
 }
 
@@ -723,23 +678,17 @@
   justify-content: center;
 }
 
-.services-image {
+.services-media img {
   display: block;
   max-width: 390px;
   width: 100%;
   height: auto;
 }
 
-.services-heading {
+.services-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0 0 28px;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .services-grid {
@@ -757,22 +706,20 @@
   flex-shrink: 0;
 }
 
-.service-icon {
+.service-icon-wrap img {
   display: block;
   width: 44px;
   height: auto;
 }
 
-.service-title {
+.services-section h3 {
   font-size: 15px;
   font-family: "PlusJakartaSans-SemiBold";
   color: #1a2e59;
   margin: 0 0 4px;
 }
 
-.service-desc {
-  font-size: 13px;
-  color: #5a6475;
+.service-item p {
   margin: 0;
 }
 
@@ -780,7 +727,7 @@
   margin-top: 28px;
 }
 
-.services-cta-btn {
+.services-cta-wrap a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -794,7 +741,7 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.services-cta-btn:hover {
+.services-cta-wrap a:hover {
   color: #ffffff;
   opacity: 0.92;
   transform: translateX(3px);
@@ -808,10 +755,6 @@
   .services-media {
     margin-bottom: 28px;
   }
-
-  .services-heading {
-    font-size: 31px;
-  }
 }
 
 /* -------------------------------- 8. The Ten Dimensions Section -------------------------------- */
@@ -821,13 +764,11 @@
   overflow: visible;
 }
 
-.dimensions-row {
+.dimensions-section .row {
   align-items: center;
 }
 
-.dimensions-heading {
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
+.dimensions-section h2 {
   color: #1a2e59;
   margin: 0 0 16px;
 }
@@ -873,23 +814,21 @@
   gap: 12px;
 }
 
-.dimension-icon {
+.dimension-body img {
   display: block;
   width: 42px;
   height: auto;
   flex-shrink: 0;
 }
 
-.dimension-title {
+.dimensions-section h3 {
   font-size: 15px;
   font-family: "PlusJakartaSans-SemiBold";
   color: #ea4f24;
   margin: 0 0 4px;
 }
 
-.dimension-desc {
-  font-size: 13px;
-  color: #5a6475;
+.dimension-body p {
   margin: 0;
 }
 
@@ -901,7 +840,7 @@
   margin-top: 24px;
 }
 
-.dimensions-carousel-btn {
+.dimensions-controls button {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -917,13 +856,13 @@
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.dimensions-carousel-btn:hover {
+.dimensions-controls button:hover {
   background-color: #1a2e59;
   border-color: #1a2e59;
   color: #ffffff;
 }
 
-.dimensions-carousel-counter {
+.dimensions-controls span {
   font-size: 13px;
   font-family: "PlusJakartaSans-Medium";
   margin-left: 4px;
@@ -956,7 +895,7 @@
   box-shadow: 0 14px 34px rgba(26, 46, 89, 0.16);
 }
 
-.dimensions-image {
+.dimensions-decagon img {
   display: block;
   width: 100%;
   height: 100%;
@@ -972,9 +911,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .dimensions-heading {
-    font-size: 31px;
-  }
 
   .dimensions-controls {
     justify-content: center;
@@ -987,11 +923,11 @@
   padding: 86px 0 74px;
 }
 
-.stories-row {
+.stories-section .row {
   align-items: center;
 }
 
-.stories-image {
+.stories-media img {
   display: block;
   width: 100%;
   height: auto;
@@ -999,25 +935,17 @@
   object-fit: cover;
 }
 
-.stories-heading {
+.stories-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0 0 18px;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.stories-text {
-  font-size: 15px;
-  color: #5a6475;
+.stories-section p {
   margin: 0 0 20px;
 }
 
-.stories-link {
+.stories-section a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1028,11 +956,11 @@
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.stories-link:hover {
+.stories-section a:hover {
   color: #ea4f24;
 }
 
-.stories-arrow-circle {
+.stories-section a span:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1045,7 +973,7 @@
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.stories-link:hover .stories-arrow-circle {
+.stories-section a:hover span:last-child {
   border-color: #ea4f24;
   transform: translateX(3px);
 }
@@ -1057,7 +985,7 @@
   margin-top: 22px;
 }
 
-.stories-carousel-btn {
+.stories-controls button {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -1073,13 +1001,13 @@
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.stories-carousel-btn:hover {
+.stories-controls button:hover {
   background-color: #1a2e59;
   border-color: #1a2e59;
   color: #ffffff;
 }
 
-.stories-carousel-counter {
+.stories-controls span {
   font-size: 13px;
   font-family: "PlusJakartaSans-Medium";
   margin-left: 4px;
@@ -1094,10 +1022,6 @@
   .stories-media {
     margin-bottom: 26px;
   }
-
-  .stories-heading {
-    font-size: 31px;
-  }
 }
 
 /* -------------------------------- 10. Testimonials Section -------------------------------- */
@@ -1106,7 +1030,7 @@
   padding: 54px 0;
 }
 
-.testimonials-row {
+.testimonials-section .row {
   align-items: center;
 }
 
@@ -1123,7 +1047,7 @@
   box-shadow: 0 6px 20px rgba(26, 46, 89, 0.08);
 }
 
-.testimonial-avatar {
+.testimonial-avatar-wrap img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1137,27 +1061,19 @@
   margin-bottom: 12px;
 }
 
-.testimonial-quote-icon {
+.testimonial-heading-row img {
   display: block;
   width: 44px;
   height: auto;
 }
 
-.testimonial-heading {
+.testimonials-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.testimonial-quote {
-  font-size: 15px;
-  color: #2c3444;
+.testimonials-section p {
   margin: 0 0 18px;
 }
 
@@ -1167,7 +1083,7 @@
   gap: 8px;
 }
 
-.testimonials-carousel-btn {
+.testimonials-controls button {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -1183,7 +1099,7 @@
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
-.testimonials-carousel-btn:hover {
+.testimonials-controls button:hover {
   background-color: #1a2e59;
   border-color: #1a2e59;
   color: #ffffff;
@@ -1192,10 +1108,6 @@
 @media (max-width: 767.98px) {
   .testimonial-avatar-wrap {
     margin-bottom: 22px;
-  }
-
-  .testimonial-heading {
-    font-size: 31px;
   }
 }
 
@@ -1210,16 +1122,10 @@
   margin-bottom: 34px;
 }
 
-.clients-heading {
+.clients-section h2 {
   display: inline-block;
-  font-size: 38px;
-  font-family: "PlusJakartaSans-Light";
   line-height: 1.2;
   margin: 0;
-  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .clients-grid {
@@ -1239,12 +1145,6 @@
   box-shadow: 0 4px 14px rgba(26, 46, 89, 0.06);
 }
 
-@media (max-width: 767.98px) {
-  .clients-heading {
-    font-size: 31px;
-  }
-}
-
 /* -------------------------------- 12. Footer Section -------------------------------- */
 .site-footer {
   background-color: #1a2e59;
@@ -1259,7 +1159,7 @@
   row-gap: 32px;
 }
 
-.footer-logo {
+.footer-brand-col img {
   display: block;
   height: 38px;
   width: auto;
@@ -1282,7 +1182,7 @@
   line-height: 1.6;
 }
 
-.footer-link-list {
+.site-footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1291,7 +1191,7 @@
   gap: 10px;
 }
 
-.footer-link {
+.site-footer ul li a {
   font-size: 14px;
   font-family: "PlusJakartaSans-Regular";
   color: rgba(255, 255, 255, 0.85);
@@ -1299,7 +1199,7 @@
   transition: color 0.2s ease;
 }
 
-.footer-link:hover {
+.site-footer ul li a:hover {
   color: #f17821;
 }
 
@@ -1310,7 +1210,7 @@
   gap: 14px;
 }
 
-.footer-social-link {
+.footer-social-wrap a {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -1323,15 +1223,15 @@
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.footer-social-link:hover {
+.footer-social-wrap a:hover {
   background-color: #ea4f24;
   border-color: #ea4f24;
   color: #ffffff;
 }
 
-.footer-social-icon {
-  width: 15px;
-  height: 15px;
+.footer-social-wrap i {
+  font-size: 14px;
+  line-height: 1;
 }
 
 .footer-bottom {
@@ -1347,11 +1247,8 @@
   gap: 10px;
 }
 
-.footer-copyright,
-.footer-credit {
+.footer-bottom p {
   margin: 0;
-  font-size: 12px;
-  font-family: "PlusJakartaSans-Light";
   color: rgba(255, 255, 255, 0.72);
 }
 

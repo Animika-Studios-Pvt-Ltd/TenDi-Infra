@@ -10,16 +10,20 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
   <link rel="stylesheet" href="custom.css" />
 </head>
-<body class="tendi-homepage">
+<body>
 
   <!-- 1. Header Section -->
   <header class="site-header" id="siteHeader">
     <div class="container-fluid header-fluid">
       <div class="header-bar">
         <a href="#heroBanner" class="header-brand">
-          <img src="images/tendi-logo.webp" alt="TenDi Logo" class="header-logo" />
+          <img src="images/tendi-logo.webp" alt="TenDi Logo" />
         </a>
 
         <button
@@ -29,25 +33,25 @@
           aria-label="Toggle navigation"
           aria-expanded="false"
         >
-          <span class="header-menu-bar"></span>
-          <span class="header-menu-bar"></span>
-          <span class="header-menu-bar"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <nav class="header-nav" id="headerNav" aria-label="Primary Navigation">
-          <ul class="header-nav-list">
-            <li class="header-nav-item"><a href="#introSection" class="header-nav-link">About Us</a></li>
-            <li class="header-nav-item"><a href="#verticalsSection" class="header-nav-link">Projects</a></li>
-            <li class="header-nav-item"><a href="#servicesSection" class="header-nav-link">Services</a></li>
-            <li class="header-nav-item"><a href="#dimensionsSection" class="header-nav-link">Quality</a></li>
-            <li class="header-nav-item"><a href="#clientsSection" class="header-nav-link">Clients</a></li>
-            <li class="header-nav-item"><a href="#storiesSection" class="header-nav-link">Resources</a></li>
-            <li class="header-nav-item"><a href="#siteFooter" class="header-nav-link">Locations</a></li>
+          <ul>
+            <li><a href="#introSection">About Us</a></li>
+            <li><a href="#verticalsSection">Projects</a></li>
+            <li><a href="#servicesSection">Services</a></li>
+            <li><a href="#dimensionsSection">Quality</a></li>
+            <li><a href="#clientsSection">Clients</a></li>
+            <li><a href="#storiesSection">Resources</a></li>
+            <li><a href="#siteFooter">Locations</a></li>
           </ul>
           <div class="header-actions">
-            <a href="#siteFooter" class="header-action-link">Career</a>
-            <span class="header-action-divider" aria-hidden="true">|</span>
-            <a href="#siteFooter" class="header-action-link">Contact Us</a>
+            <a href="#siteFooter">Career</a>
+            <span aria-hidden="true">|</span>
+            <a href="#siteFooter">Contact Us</a>
           </div>
         </nav>
       </div>
@@ -57,17 +61,17 @@
   <main>
     <!-- 2. Hero Banner Section -->
     <section class="hero-banner" id="heroBanner">
-      <img src="images/banner-1.webp" alt="Modern architectural building and engineering blueprints" class="hero-bg-image" />
+      <img src="images/banner-1.webp" alt="Modern architectural building and engineering blueprints" />
       <div class="hero-overlay">
         <div class="container-fluid hero-fluid">
           <div class="row hero-row">
-            <div class="col-lg-6 offset-lg-7 col-md-7 offset-md-5">
+            <div class="col-lg-5 offset-lg-7 col-md-7 offset-md-5">
               <div class="hero-content">
-                <h1 class="hero-title">
-                  <p class="hero-title-top">A Higher Dimension of</p>
-                  <p class="hero-title-main">Engineering</p>
+                <h1>
+                  <span>A Higher Dimension of</span>
+                  <span>Engineering</span>
                 </h1>
-                <p class="hero-subtitle">Precision by Principle. Excellence by Design.</p>
+                <p>Precision by Principle. Excellence by Design.</p>
               </div>
             </div>
           </div>
@@ -78,21 +82,21 @@
     <!-- 3. Intro Section -->
     <section class="intro-section" id="introSection">
       <div class="container">
-        <div class="row intro-row">
+        <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="intro-media">
-              <img src="images/intro.webp" alt="Architectural engineering illustration" class="intro-image" />
+              <img src="images/intro.webp" alt="Architectural engineering illustration" />
             </div>
           </div>
-          <div class="col-lg-5 offset-lg-1 col-md-6">
-            <div class="intro-content">
-              <h2 class="intro-heading">Intro</h2>
-              <p class="intro-text">
-                Founded on the principles of Ten Dimensions of Excellence, TenDi Infra brings together engineering rigor, modern construction methodologies, and over two decades of domain leadership to deliver enduring, high-precision infrastructure.
+          <div class="col-lg-5 col-md-6">
+            <div>
+              <h2>Intro</h2>
+              <p>
+                Founded by Venugopala Reddy and Sheshagiri.G.V.S, Tendi brings together 35&ndash;40 years of domain experience and over 100 years of collective professional expertise.
               </p>
-              <a href="#advantageSection" class="intro-link">
+              <a href="#advantageSection">
                 <span>Learn More</span>
-                <span class="intro-arrow-circle" aria-hidden="true">&rarr;</span>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -103,22 +107,22 @@
     <!-- 4. Tendi Advantage Section -->
     <section class="advantage-section" id="advantageSection">
       <div class="container">
-        <div class="row advantage-row">
+        <div class="row">
           <div class="col-lg-5 col-md-6">
             <div class="advantage-content">
-              <h2 class="advantage-heading">Tendi Advantage</h2>
-              <p class="advantage-text">
+              <h2>Tendi Advantage</h2>
+              <p>
                 We combine structural engineering mastery with disciplined project governance to eliminate execution gaps. From complex foundations to turnkey delivery, our integrated approach ensures predictable timelines, uncompromised safety, and lasting structural value.
               </p>
-              <a href="#competenceSection" class="advantage-link">
+              <a href="#competenceSection">
                 <span>Learn More</span>
-                <span class="advantage-arrow-circle" aria-hidden="true">&rarr;</span>
+                <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
             <div class="advantage-media">
-              <img src="images/tendi-advantage.webp" alt="Tendi Advantage construction visualization" class="advantage-image" />
+              <img src="images/tendi-advantage.webp" alt="Tendi Advantage construction visualization" />
             </div>
           </div>
         </div>
@@ -129,48 +133,48 @@
     <section class="competence-section" id="competenceSection">
       <div class="container">
         <div class="competence-header">
-          <h2 class="competence-heading">Core Competence</h2>
-          <p class="competence-subtitle">Complexity Doesn't Intimidate Us. It's Our Territory.</p>
+          <h2>Core Competence</h2>
+          <p>Complexity Doesn't Intimidate Us. It's Our Territory.</p>
         </div>
         <div class="row competence-grid">
           <div class="col-lg col-md-4 col-sm-6">
             <div class="competence-card">
               <div class="competence-icon-wrap">
-                <img src="images/public-infrastructure.webp" alt="Large Structures" class="competence-icon" />
+                <img src="images/public-infrastructure.webp" alt="Large Structures" />
               </div>
-              <h3 class="competence-card-title">Large<br />Structures</h3>
+              <h3>Large<br />Structures</h3>
             </div>
           </div>
           <div class="col-lg col-md-4 col-sm-6">
             <div class="competence-card">
               <div class="competence-icon-wrap">
-                <img src="images/advanced-construction-techniques.webp" alt="Advanced Construction Techniques" class="competence-icon" />
+                <img src="images/advanced-construction-techniques.webp" alt="Advanced Construction Techniques" />
               </div>
-              <h3 class="competence-card-title">Advanced Construction<br />Techniques</h3>
+              <h3>Advanced Construction<br />Techniques</h3>
             </div>
           </div>
           <div class="col-lg col-md-4 col-sm-6">
             <div class="competence-card">
               <div class="competence-icon-wrap">
-                <img src="images/exposed-concrete-structures.webp" alt="Exposed Concrete Structures" class="competence-icon" />
+                <img src="images/exposed-concrete-structures.webp" alt="Exposed Concrete Structures" />
               </div>
-              <h3 class="competence-card-title">Exposed Concrete<br />Structures</h3>
+              <h3>Exposed Concrete<br />Structures</h3>
             </div>
           </div>
           <div class="col-lg col-md-6 col-sm-6">
             <div class="competence-card">
               <div class="competence-icon-wrap">
-                <img src="images/specialised-constructions.webp" alt="Specialised Constructions" class="competence-icon" />
+                <img src="images/specialised-constructions.webp" alt="Specialised Constructions" />
               </div>
-              <h3 class="competence-card-title">Specialised<br />Constructions</h3>
+              <h3>Specialised<br />Constructions</h3>
             </div>
           </div>
           <div class="col-lg col-md-6 col-sm-12">
             <div class="competence-card">
               <div class="competence-icon-wrap">
-                <img src="images/seismic-resistant-structures.webp" alt="Seismic-Resistant Structures" class="competence-icon" />
+                <img src="images/seismic-resistant-structures.webp" alt="Seismic-Resistant Structures" />
               </div>
-              <h3 class="competence-card-title">Seismic-Resistant<br />Structures</h3>
+              <h3>Seismic-Resistant<br />Structures</h3>
             </div>
           </div>
         </div>
@@ -181,66 +185,65 @@
     <section class="verticals-section" id="verticalsSection">
       <div class="container">
         <div class="verticals-header">
-          <h2 class="verticals-heading">Verticals</h2>
+          <h2>Verticals</h2>
           <p class="verticals-tagline">Different Sectors. Diverse Structures. One Standard.</p>
           <p class="verticals-description">
             From high-rise residential towers to heavy industrial facilities, we bring specialized engineering precision and turnkey execution across every built environment.
           </p>
         </div>
 
-        <div class="verticals-carousel" id="verticalsCarousel">
+        <div id="verticalsCarousel">
           <div class="row verticals-grid" id="verticalsTrack">
-            <!-- Populated and controlled via custom.js (initial slide rendered for instant paint) -->
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <article class="vertical-card">
+              <article>
                 <div class="vertical-card-thumb">
-                  <img src="images/residential.webp" alt="Residential" class="vertical-card-img" />
+                  <img src="images/residential.webp" alt="Residential" />
                 </div>
-                <div class="vertical-card-body">
-                  <h3 class="vertical-card-title">Residential</h3>
-                  <p class="vertical-card-text">High-rise apartments, gated villas, and integrated townships.</p>
+                <div>
+                  <h3>Residential</h3>
+                  <p>High-rise apartments, gated villas, and integrated townships.</p>
                 </div>
               </article>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <article class="vertical-card">
+              <article>
                 <div class="vertical-card-thumb">
-                  <img src="images/commercial.webp" alt="Commercial" class="vertical-card-img" />
+                  <img src="images/commercial.webp" alt="Commercial" />
                 </div>
-                <div class="vertical-card-body">
-                  <h3 class="vertical-card-title">Commercial</h3>
-                  <p class="vertical-card-text">Grade-A office towers, retail hubs, and corporate campuses.</p>
+                <div>
+                  <h3>Commercial</h3>
+                  <p>Grade-A office towers, retail hubs, and corporate campuses.</p>
                 </div>
               </article>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <article class="vertical-card">
+              <article>
                 <div class="vertical-card-thumb">
-                  <img src="images/industrial.webp" alt="Industrial" class="vertical-card-img" />
+                  <img src="images/industrial.webp" alt="Industrial" />
                 </div>
-                <div class="vertical-card-body">
-                  <h3 class="vertical-card-title">Industrial</h3>
-                  <p class="vertical-card-text">Manufacturing plants, logistics parks, and heavy-load warehouses.</p>
+                <div>
+                  <h3>Industrial</h3>
+                  <p>Manufacturing plants, logistics parks, and heavy-load warehouses.</p>
                 </div>
               </article>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <article class="vertical-card">
+              <article>
                 <div class="vertical-card-thumb">
-                  <img src="images/institutional.webp" alt="Institutional" class="vertical-card-img" />
+                  <img src="images/institutional.webp" alt="Institutional" />
                 </div>
-                <div class="vertical-card-body">
-                  <h3 class="vertical-card-title">Institutional</h3>
-                  <p class="vertical-card-text">Educational campuses, healthcare centers, and civic facilities.</p>
+                <div>
+                  <h3>Institutional</h3>
+                  <p>Educational campuses, healthcare centers, and civic facilities.</p>
                 </div>
               </article>
             </div>
           </div>
 
           <div class="verticals-controls">
-            <button type="button" class="verticals-carousel-btn" id="verticalsPrev" aria-label="Previous verticals">&lsaquo;</button>
-            <button type="button" class="verticals-carousel-btn" id="verticalsNext" aria-label="Next verticals">&rsaquo;</button>
-            <span class="verticals-carousel-counter" id="verticalsCounter">01/02</span>
+            <button type="button" id="verticalsPrev" aria-label="Previous verticals">&lsaquo;</button>
+            <button type="button" id="verticalsNext" aria-label="Next verticals">&rsaquo;</button>
+            <span id="verticalsCounter">01/02</span>
           </div>
         </div>
       </div>
@@ -249,74 +252,74 @@
     <!-- 7. Services Section -->
     <section class="services-section" id="servicesSection">
       <div class="container">
-        <div class="row services-row">
+        <div class="row">
           <div class="col-lg-5 col-md-5">
             <div class="services-media">
-              <img src="images/services.webp" alt="High-rise building services illustration" class="services-image" />
+              <img src="images/services.webp" alt="High-rise building services illustration" />
             </div>
           </div>
           <div class="col-lg-7 col-md-7">
-            <div class="services-content">
-              <h2 class="services-heading">Services</h2>
+            <div>
+              <h2>Services</h2>
               <div class="row services-grid">
                 <div class="col-sm-6">
                   <div class="service-item">
                     <div class="service-icon-wrap">
-                      <img src="images/legal-statutory.webp" alt="Legal & Statutory" class="service-icon" />
+                      <img src="images/legal-statutory.webp" alt="Legal & Statutory" />
                     </div>
-                    <div class="service-details">
-                      <h3 class="service-title">Legal &amp; Statutory</h3>
-                      <p class="service-desc">Project approvals, regulatory clearances, and full compliance.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="service-item">
-                    <div class="service-icon-wrap">
-                      <img src="images/design.webp" alt="Design" class="service-icon" />
-                    </div>
-                    <div class="service-details">
-                      <h3 class="service-title">Design</h3>
-                      <p class="service-desc">Architectural, structural, and MEP engineering coordination.</p>
+                    <div>
+                      <h3>Legal &amp; Statutory</h3>
+                      <p>Project approvals, regulatory clearances, and full compliance.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="service-item">
                     <div class="service-icon-wrap">
-                      <img src="images/estimation.webp" alt="Estimation" class="service-icon" />
+                      <img src="images/design.webp" alt="Design" />
                     </div>
-                    <div class="service-details">
-                      <h3 class="service-title">Estimation</h3>
-                      <p class="service-desc">Accurate quantity take-offs, BOQs, and cost engineering.</p>
+                    <div>
+                      <h3>Design</h3>
+                      <p>Architectural, structural, and MEP engineering coordination.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="service-item">
                     <div class="service-icon-wrap">
-                      <img src="images/survey.webp" alt="Survey" class="service-icon" />
+                      <img src="images/estimation.webp" alt="Estimation" />
                     </div>
-                    <div class="service-details">
-                      <h3 class="service-title">Survey</h3>
-                      <p class="service-desc">Topographical mapping, geotechnical, and site investigations.</p>
+                    <div>
+                      <h3>Estimation</h3>
+                      <p>Accurate quantity take-offs, BOQs, and cost engineering.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="service-item">
+                    <div class="service-icon-wrap">
+                      <img src="images/survey.webp" alt="Survey" />
+                    </div>
+                    <div>
+                      <h3>Survey</h3>
+                      <p>Topographical mapping, geotechnical, and site investigations.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="service-item">
                     <div class="service-icon-wrap">
-                      <img src="images/turnkey-construction.webp" alt="Turnkey Construction" class="service-icon" />
+                      <img src="images/turnkey-construction.webp" alt="Turnkey Construction" />
                     </div>
-                    <div class="service-details">
-                      <h3 class="service-title">Turnkey Construction</h3>
-                      <p class="service-desc">End-to-end civil execution, finishing, and timely handover.</p>
+                    <div>
+                      <h3>Turnkey Construction</h3>
+                      <p>End-to-end civil execution, finishing, and timely handover.</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="services-cta-wrap">
-                <a href="#dimensionsSection" class="services-cta-btn">
+                <a href="#dimensionsSection">
                   <span>Learn More</span>
                   <span aria-hidden="true">&rarr;</span>
                 </a>
@@ -330,10 +333,10 @@
     <!-- 8. The Ten Dimensions Section -->
     <section class="dimensions-section" id="dimensionsSection">
       <div class="container">
-        <div class="row dimensions-row">
+        <div class="row">
           <div class="col-lg-6 col-md-7">
-            <div class="dimensions-content">
-              <h2 class="dimensions-heading">The Ten Dimensions</h2>
+            <div>
+              <h2>The Ten Dimensions</h2>
               <p class="dimensions-intro">
                 Our proprietary framework unifies ten critical pillars of engineering and project delivery—ensuring every structure achieves unmatched quality, safety, and long-term performance.
               </p>
@@ -343,10 +346,10 @@
                   <div class="dimension-card">
                     <span class="dimension-badge dimension-badge-soft">01</span>
                     <div class="dimension-body">
-                      <img src="images/engineering-expertise.webp" alt="Engineering Expertise" class="dimension-icon" />
-                      <div class="dimension-text-wrap">
-                        <h3 class="dimension-title">Engineering Expertise</h3>
-                        <p class="dimension-desc">Deep structural knowledge across complex terrains.</p>
+                      <img src="images/engineering-expertise.webp" alt="Engineering Expertise" />
+                      <div>
+                        <h3>Engineering Expertise</h3>
+                        <p>Deep structural knowledge across complex terrains.</p>
                       </div>
                     </div>
                   </div>
@@ -355,10 +358,10 @@
                   <div class="dimension-card">
                     <span class="dimension-badge dimension-badge-teal">02</span>
                     <div class="dimension-body">
-                      <img src="images/domain-intelligence.webp" alt="Domain Intelligence" class="dimension-icon" />
-                      <div class="dimension-text-wrap">
-                        <h3 class="dimension-title">Domain Intelligence</h3>
-                        <p class="dimension-desc">Data-driven insights from decades of execution.</p>
+                      <img src="images/domain-intelligence.webp" alt="Domain Intelligence" />
+                      <div>
+                        <h3>Domain Intelligence</h3>
+                        <p>Data-driven insights from decades of execution.</p>
                       </div>
                     </div>
                   </div>
@@ -366,9 +369,9 @@
               </div>
 
               <div class="dimensions-controls">
-                <button type="button" class="dimensions-carousel-btn" id="dimensionsPrev" aria-label="Previous dimensions">&lsaquo;</button>
-                <button type="button" class="dimensions-carousel-btn" id="dimensionsNext" aria-label="Next dimensions">&rsaquo;</button>
-                <span class="dimensions-carousel-counter" id="dimensionsCounter">01/05</span>
+                <button type="button" id="dimensionsPrev" aria-label="Previous dimensions">&lsaquo;</button>
+                <button type="button" id="dimensionsNext" aria-label="Next dimensions">&rsaquo;</button>
+                <span id="dimensionsCounter">01/05</span>
               </div>
             </div>
           </div>
@@ -376,7 +379,7 @@
           <div class="col-lg-6 col-md-5">
             <div class="dimensions-visual">
               <div class="dimensions-decagon">
-                <img src="images/the-ten-dimensions.webp" alt="The Ten Dimensions architectural landmark" class="dimensions-image" />
+                <img src="images/the-ten-dimensions.webp" alt="The Ten Dimensions architectural landmark" />
               </div>
             </div>
           </div>
@@ -387,26 +390,26 @@
     <!-- 9. Success Stories Section -->
     <section class="stories-section" id="storiesSection">
       <div class="container">
-        <div class="row stories-row">
+        <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="stories-media">
-              <img src="images/success-stories.webp" alt="Landmark curved pavilion project" class="stories-image" id="storyImage" />
+              <img src="images/success-stories.webp" alt="Landmark curved pavilion project" id="storyImage" />
             </div>
           </div>
           <div class="col-lg-5 offset-lg-1 col-md-6">
-            <div class="stories-content">
-              <h2 class="stories-heading">Success Stories</h2>
-              <p class="stories-text" id="storyText">
+            <div>
+              <h2>Success Stories</h2>
+              <p id="storyText">
                 Delivering an iconic waterfront cultural pavilion with complex free-form shell geometry, post-tensioned spans, and architectural exposed concrete—completed ahead of schedule with zero safety incidents.
               </p>
-              <a href="#testimonialsSection" class="stories-link">
+              <a href="#testimonialsSection">
                 <span>Read More</span>
-                <span class="stories-arrow-circle" aria-hidden="true">&rarr;</span>
+                <span aria-hidden="true">&rarr;</span>
               </a>
               <div class="stories-controls">
-                <button type="button" class="stories-carousel-btn" id="storiesPrev" aria-label="Previous story">&lsaquo;</button>
-                <button type="button" class="stories-carousel-btn" id="storiesNext" aria-label="Next story">&rsaquo;</button>
-                <span class="stories-carousel-counter" id="storiesCounter">01/03</span>
+                <button type="button" id="storiesPrev" aria-label="Previous story">&lsaquo;</button>
+                <button type="button" id="storiesNext" aria-label="Next story">&rsaquo;</button>
+                <span id="storiesCounter">01/03</span>
               </div>
             </div>
           </div>
@@ -417,24 +420,24 @@
     <!-- 10. Testimonials Section -->
     <section class="testimonials-section" id="testimonialsSection">
       <div class="container">
-        <div class="row testimonials-row">
+        <div class="row">
           <div class="col-lg-3 offset-lg-1 col-md-4">
             <div class="testimonial-avatar-wrap">
-              <img src="images/testimonial.webp" alt="Client portrait" class="testimonial-avatar" id="testimonialAvatar" />
+              <img src="images/testimonial.webp" alt="Client portrait" id="testimonialAvatar" />
             </div>
           </div>
           <div class="col-lg-7 col-md-8">
-            <div class="testimonial-content">
+            <div>
               <div class="testimonial-heading-row">
-                <img src="images/testimonials.webp" alt="Quote icon" class="testimonial-quote-icon" />
-                <h2 class="testimonial-heading">Testimonials</h2>
+                <img src="images/testimonials.webp" alt="Quote icon" />
+                <h2>Testimonials</h2>
               </div>
-              <p class="testimonial-quote" id="testimonialQuote">
+              <p id="testimonialQuote">
                 "TenDi Infra demonstrated exceptional technical depth and schedule discipline throughout our commercial tower build. Their proactive engineering solutions saved both time and structural cost without compromising quality."
               </p>
               <div class="testimonials-controls">
-                <button type="button" class="testimonials-carousel-btn" id="testimonialsPrev" aria-label="Previous testimonial">&lsaquo;</button>
-                <button type="button" class="testimonials-carousel-btn" id="testimonialsNext" aria-label="Next testimonial">&rsaquo;</button>
+                <button type="button" id="testimonialsPrev" aria-label="Previous testimonial">&lsaquo;</button>
+                <button type="button" id="testimonialsNext" aria-label="Next testimonial">&rsaquo;</button>
               </div>
             </div>
           </div>
@@ -446,7 +449,7 @@
     <section class="clients-section" id="clientsSection">
       <div class="container">
         <div class="clients-header">
-          <h2 class="clients-heading">Clients</h2>
+          <h2>Clients</h2>
         </div>
         <div class="row clients-grid">
           <div class="col-lg-3 col-md-3 col-sm-6 col-6">
@@ -473,8 +476,8 @@
         <div class="row footer-row">
           <div class="col-lg-5 col-md-12">
             <div class="footer-brand-col">
-              <img src="images/tendi-logo-1.webp" alt="TenDi Logo White" class="footer-logo" />
-              <div class="footer-address-block">
+              <img src="images/tendi-logo-1.webp" alt="TenDi Logo White" />
+              <div>
                 <p class="footer-address-label">Head Office:</p>
                 <p class="footer-address-text">
                   Plot No. 42, Jubilee Enclave, Madhapur, HITEC City,<br />
@@ -485,39 +488,33 @@
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <ul class="footer-link-list">
-              <li><a href="#introSection" class="footer-link">About Us</a></li>
-              <li><a href="#verticalsSection" class="footer-link">Projects</a></li>
-              <li><a href="#servicesSection" class="footer-link">Services</a></li>
-              <li><a href="#dimensionsSection" class="footer-link">Quality</a></li>
+            <ul>
+              <li><a href="#introSection">About Us</a></li>
+              <li><a href="#verticalsSection">Projects</a></li>
+              <li><a href="#servicesSection">Services</a></li>
+              <li><a href="#dimensionsSection">Quality</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <ul class="footer-link-list">
-              <li><a href="#clientsSection" class="footer-link">Clients</a></li>
-              <li><a href="#storiesSection" class="footer-link">Resources</a></li>
-              <li><a href="#siteFooter" class="footer-link">Careers</a></li>
-              <li><a href="#heroBanner" class="footer-link">Sitemap</a></li>
+            <ul>
+              <li><a href="#clientsSection">Clients</a></li>
+              <li><a href="#storiesSection">Resources</a></li>
+              <li><a href="#siteFooter">Careers</a></li>
+              <li><a href="#heroBanner">Sitemap</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-4 col-12">
             <div class="footer-social-wrap">
-              <a href="#siteFooter" class="footer-social-link" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                </svg>
+              <a href="#siteFooter" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               </a>
-              <a href="#siteFooter" class="footer-social-link" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon">
-                  <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"/>
-                </svg>
+              <a href="#siteFooter" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
               </a>
-              <a href="#siteFooter" class="footer-social-link" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon">
-                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                </svg>
+              <a href="#siteFooter" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -528,8 +525,8 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="footer-bottom-inner">
-          <p class="footer-copyright">&copy; 2026 TenDi Infra. All rights reserved.</p>
-          <p class="footer-credit">Powered by Lumos</p>
+          <p>&copy; 2026 TenDi Infra. All rights reserved.</p>
+          <p>Powered by Lumos</p>
         </div>
       </div>
     </div>

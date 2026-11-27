@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(
         (item) => `
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <article class="vertical-card">
+          <article>
             <div class="vertical-card-thumb">
-              <img src="${item.img}" alt="${item.title}" class="vertical-card-img" />
+              <img src="${item.img}" alt="${item.title}" />
             </div>
-            <div class="vertical-card-body">
-              <h3 class="vertical-card-title">${item.title}</h3>
-              <p class="vertical-card-text">${item.text}</p>
+            <div>
+              <h3>${item.title}</h3>
+              <p>${item.text}</p>
             </div>
           </article>
         </div>`
@@ -204,10 +204,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="dimension-card">
             <span class="dimension-badge ${item.badgeClass}">${item.num}</span>
             <div class="dimension-body">
-              <img src="${item.img}" alt="${item.title}" class="dimension-icon" />
-              <div class="dimension-text-wrap">
-                <h3 class="dimension-title">${item.title}</h3>
-                <p class="dimension-desc">${item.desc}</p>
+              <img src="${item.img}" alt="${item.title}" />
+              <div>
+                <h3>${item.title}</h3>
+                <p>${item.desc}</p>
               </div>
             </div>
           </div>
