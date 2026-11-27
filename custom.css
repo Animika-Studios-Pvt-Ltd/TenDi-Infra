@@ -1,0 +1,1099 @@
+/* ==========================================================================
+   Fonts: Plus Jakarta Sans (300, 400, 500, 600)
+   ========================================================================== */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   Page Wrapper
+   ========================================================================== */
+.tendi-homepage {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: #2c3444;
+  background-color: #ffffff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Shared Typography & UI Components
+   ========================================================================== */
+.section-heading-gradient {
+  display: inline-block;
+  font-size: 2.35rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 18px;
+  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a2e59;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.text-arrow-link:hover {
+  color: #ea4f24;
+}
+
+.arrow-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #1a2e59;
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.text-arrow-link:hover .arrow-circle {
+  border-color: #ea4f24;
+  transform: translateX(3px);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carousel-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-btn-light {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.carousel-btn-light:hover {
+  background-color: #ea4f24;
+  border-color: #ea4f24;
+}
+
+.carousel-btn-dark {
+  border: 1px solid rgba(26, 46, 89, 0.35);
+  color: #1a2e59;
+}
+
+.carousel-btn-dark:hover {
+  background-color: #1a2e59;
+  border-color: #1a2e59;
+  color: #ffffff;
+}
+
+.carousel-counter {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.carousel-counter-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.carousel-counter-dark {
+  color: #1a2e59;
+}
+
+/* ==========================================================================
+   1. Header Section
+   ========================================================================== */
+.site-header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-bar {
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 6px;
+  padding: 12px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 24px rgba(26, 46, 89, 0.08);
+  position: relative;
+}
+
+.header-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-logo {
+  display: block;
+  height: 34px;
+  width: auto;
+  max-width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 22px;
+}
+
+.header-nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1a2e59;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-nav-link:hover {
+  color: #ea4f24;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1a2e59;
+}
+
+.header-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #1a2e59;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-search-btn:hover {
+  color: #ea4f24;
+}
+
+.header-search-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.header-action-divider {
+  color: #cbd5e1;
+}
+
+.header-contact-link {
+  color: #1a2e59;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-contact-link:hover {
+  color: #ea4f24;
+}
+
+.header-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid rgba(26, 46, 89, 0.2);
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.header-menu-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #1a2e59;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   2. Hero Banner Section
+   ========================================================================== */
+.hero-banner {
+  background-image: url("images/banner-1.webp");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 130px 0 90px;
+}
+
+.hero-container {
+  width: 100%;
+}
+
+.hero-row {
+  align-items: center;
+}
+
+.hero-content {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.hero-title {
+  margin: 0 0 10px;
+  line-height: 1.08;
+}
+
+.hero-title-top {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #1a2e59;
+  margin-bottom: 4px;
+}
+
+.hero-title-main {
+  display: inline-block;
+  font-size: 3.75rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ea4f24 0%, #f17821 35%, #1a2e59 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1a2e59;
+}
+
+/* ==========================================================================
+   3. Intro Section
+   ========================================================================== */
+.intro-section {
+  background-color: #ffffff;
+  padding: 78px 0;
+}
+
+.intro-row {
+  align-items: center;
+}
+
+.intro-media {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image {
+  display: block;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+}
+
+.intro-text {
+  font-size: 0.95rem;
+  color: #5a6475;
+  margin: 0 0 22px;
+}
+
+/* ==========================================================================
+   4. Tendi Advantage Section
+   ========================================================================== */
+.advantage-section {
+  background: linear-gradient(90deg, #d8ecfb 0%, #c8e3f9 55%, #b8dbf6 100%);
+  padding: 54px 0 0;
+  overflow: hidden;
+}
+
+.advantage-row {
+  align-items: center;
+}
+
+.advantage-content {
+  padding-bottom: 54px;
+}
+
+.advantage-text {
+  font-size: 0.95rem;
+  color: #2c3444;
+  margin: 0 0 22px;
+}
+
+.advantage-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.advantage-image {
+  display: block;
+  max-width: 100%;
+  max-height: 360px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   5. Core Competence Section
+   ========================================================================== */
+.competence-section {
+  background-color: #ffffff;
+  padding: 74px 0;
+}
+
+.competence-header {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.competence-heading {
+  margin-bottom: 10px;
+}
+
+.competence-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1a2e59;
+}
+
+.competence-grid {
+  row-gap: 28px;
+}
+
+.competence-card {
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.competence-icon-wrap {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.competence-icon {
+  display: block;
+  max-height: 68px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.competence-card-title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #1a2e59;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   6. Verticals Section
+   ========================================================================== */
+.verticals-section {
+  background-color: #1a2e59;
+  padding: 74px 0 64px;
+  color: #ffffff;
+}
+
+.verticals-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 52px;
+}
+
+.verticals-heading {
+  font-size: 2.35rem;
+  font-weight: 300;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.verticals-tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #82b8f8;
+  margin: 0 0 12px;
+}
+
+.verticals-description {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.84);
+  margin: 0;
+}
+
+.verticals-grid {
+  row-gap: 44px;
+}
+
+.vertical-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 0 18px 24px;
+  text-align: center;
+  height: 100%;
+  margin-top: 28px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.vertical-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(241, 120, 33, 0.6);
+}
+
+.vertical-card-thumb {
+  width: 112px;
+  height: 112px;
+  margin: -34px auto 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.vertical-card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vertical-card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.vertical-card-text {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.verticals-controls {
+  justify-content: flex-end;
+  margin-top: 26px;
+}
+
+/* ==========================================================================
+   7. Services Section
+   ========================================================================== */
+.services-section {
+  background-color: #ffffff;
+  padding: 78px 0;
+}
+
+.services-row {
+  align-items: center;
+}
+
+.services-media {
+  display: flex;
+  justify-content: center;
+}
+
+.services-image {
+  display: block;
+  max-width: 390px;
+  width: 100%;
+  height: auto;
+}
+
+.services-heading {
+  margin-bottom: 28px;
+}
+
+.services-grid {
+  row-gap: 24px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.service-icon-wrap {
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.service-icon {
+  display: block;
+  width: 44px;
+  height: auto;
+}
+
+.service-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a2e59;
+  margin: 0 0 4px;
+}
+
+.service-desc {
+  font-size: 0.84rem;
+  color: #5a6475;
+  margin: 0;
+}
+
+.services-cta-wrap {
+  margin-top: 28px;
+}
+
+.services-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ea4f24 0%, #f17821 40%, #1a2e59 100%);
+  clip-path: polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.services-cta-btn:hover {
+  color: #ffffff;
+  opacity: 0.92;
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   8. The Ten Dimensions Section
+   ========================================================================== */
+.dimensions-section {
+  background-color: #f2f4f7;
+  padding: 64px 0;
+  overflow: visible;
+}
+
+.dimensions-row {
+  align-items: center;
+}
+
+.dimensions-heading {
+  font-size: 2.35rem;
+  font-weight: 300;
+  color: #1a2e59;
+  margin: 0 0 16px;
+}
+
+.dimensions-intro {
+  font-size: 0.92rem;
+  color: #5a6475;
+  margin: 0 0 28px;
+}
+
+.dimensions-pair {
+  row-gap: 20px;
+}
+
+.dimension-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dimension-badge {
+  display: inline-block;
+  width: 44px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.dimension-badge-soft {
+  background-color: #93cbd9;
+}
+
+.dimension-badge-teal {
+  background-color: #0ea5c6;
+}
+
+.dimension-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.dimension-icon {
+  display: block;
+  width: 42px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.dimension-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #ea4f24;
+  margin: 0 0 4px;
+}
+
+.dimension-desc {
+  font-size: 0.82rem;
+  color: #5a6475;
+  margin: 0;
+}
+
+.dimensions-controls {
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.dimensions-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.dimensions-decagon {
+  width: 380px;
+  height: 380px;
+  max-width: 100%;
+  clip-path: polygon(
+    50% 0%,
+    79% 10%,
+    98% 35%,
+    98% 65%,
+    79% 90%,
+    50% 100%,
+    21% 90%,
+    2% 65%,
+    2% 35%,
+    21% 10%
+  );
+  overflow: hidden;
+  margin: -95px 0;
+  box-shadow: 0 14px 34px rgba(26, 46, 89, 0.16);
+}
+
+.dimensions-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   9. Success Stories Section
+   ========================================================================== */
+.stories-section {
+  background-color: #ffffff;
+  padding: 86px 0 74px;
+}
+
+.stories-row {
+  align-items: center;
+}
+
+.stories-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.stories-text {
+  font-size: 0.94rem;
+  color: #5a6475;
+  margin: 0 0 20px;
+}
+
+.stories-controls {
+  margin-top: 22px;
+}
+
+/* ==========================================================================
+   10. Testimonials Section
+   ========================================================================== */
+.testimonials-section {
+  background-color: #d9ecfa;
+  padding: 54px 0;
+}
+
+.testimonials-row {
+  align-items: center;
+}
+
+.testimonial-avatar-wrap {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(26, 46, 89, 0.08);
+}
+
+.testimonial-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.testimonial-quote-icon {
+  display: block;
+  width: 44px;
+  height: auto;
+}
+
+.testimonial-heading {
+  margin: 0;
+}
+
+.testimonial-quote {
+  font-size: 0.94rem;
+  color: #2c3444;
+  margin: 0 0 18px;
+}
+
+/* ==========================================================================
+   11. Clients Section
+   ========================================================================== */
+.clients-section {
+  background-color: #ffffff;
+  padding: 66px 0 74px;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.clients-heading {
+  margin: 0;
+}
+
+.clients-grid {
+  row-gap: 20px;
+}
+
+.client-logo-box {
+  background-color: #eff1f5;
+  border-radius: 8px;
+  height: 92px;
+  width: 100%;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-logo-box:hover {
+  background-color: #e6eaf1;
+  box-shadow: 0 4px 14px rgba(26, 46, 89, 0.06);
+}
+
+/* ==========================================================================
+   12. Footer Section
+   ========================================================================== */
+.site-footer {
+  background-color: #1a2e59;
+  color: #ffffff;
+}
+
+.footer-main {
+  padding: 58px 0 48px;
+}
+
+.footer-row {
+  row-gap: 32px;
+}
+
+.footer-logo {
+  display: block;
+  height: 38px;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+
+.footer-address-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 6px;
+}
+
+.footer-address-text {
+  font-size: 0.84rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #f17821;
+}
+
+.footer-social-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.footer-social-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social-link:hover {
+  background-color: #ea4f24;
+  border-color: #ea4f24;
+  color: #ffffff;
+}
+
+.footer-social-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-bottom {
+  background-color: #132244;
+  padding: 14px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-copyright,
+.footer-credit {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .header-menu-toggle {
+    display: flex;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 20px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 12px 30px rgba(26, 46, 89, 0.14);
+  }
+
+  .header-nav.is-open {
+    display: flex;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 22px;
+    border-radius: 8px;
+  }
+
+  .hero-title-main {
+    font-size: 2.85rem;
+  }
+
+  .dimensions-decagon {
+    width: 300px;
+    height: 300px;
+    margin: 28px auto 0;
+  }
+
+  .footer-social-wrap {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-heading-gradient,
+  .verticals-heading,
+  .dimensions-heading {
+    font-size: 1.95rem;
+  }
+
+  .hero-banner {
+    min-height: 460px;
+    padding: 115px 0 60px;
+  }
+
+  .hero-title-top {
+    font-size: 1.35rem;
+  }
+
+  .hero-title-main {
+    font-size: 2.35rem;
+  }
+
+  .intro-section,
+  .competence-section,
+  .services-section,
+  .stories-section {
+    padding: 54px 0;
+  }
+
+  .advantage-section {
+    padding-top: 44px;
+  }
+
+  .advantage-content {
+    padding-bottom: 24px;
+  }
+
+  .services-media {
+    margin-bottom: 28px;
+  }
+
+  .stories-media {
+    margin-bottom: 26px;
+  }
+
+  .testimonial-avatar-wrap {
+    margin-bottom: 22px;
+  }
+
+  .verticals-controls,
+  .dimensions-controls {
+    justify-content: center;
+  }
+}
