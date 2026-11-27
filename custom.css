@@ -276,11 +276,14 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 24px;
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
-.hero-container {
+.hero-fluid {
   width: 100%;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .hero-row {
@@ -289,7 +292,9 @@
 
 .hero-content {
   text-align: left;
-  padding-left: 72px;
+  padding-left: 0px;
+  margin-left: -32px;
+  margin-top: -30px;
 }
 
 .hero-title {
@@ -299,21 +304,25 @@
 
 .hero-title-top {
   display: block;
-  font-size: 48px;
-  font-family: "PlusJakartaSansLight";
+  font-size: 64px;
+  font-family: "PlusJakartaSans-Light";
   color: #000000;
   letter-spacing: -0.5px;
-  line-height: 1.08;
-  margin-bottom: -4px;
+  line-height: 1.1;
+  white-space: nowrap;
+  margin-bottom: -8px;
 }
 
 .hero-title-main {
   display: inline-block;
-  font-size: 92px;
-  font-family: "PlusJakartaSansMedium";
+  font-size: 120px;
+  font-family: "PlusJakartaSans-SemiBold";
   letter-spacing: -1.5px;
   line-height: 1.08;
   padding-bottom: 10px;
+  margin-bottom: 0;
+  margin-left: -6px;
+  white-space: nowrap;
   background: linear-gradient(90deg, #ea4f24 0%, #ea4f24 12%, #1a2e59 75%, #1a2e59 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -321,11 +330,12 @@
 }
 
 .hero-subtitle {
-  margin: -4px 0 0;
-  font-size: 22px;
-  font-family: "PlusJakartaSansLight";
-  color: #000000;
+  margin: 0;
+  font-size: 32px;
+  font-family: "PlusJakartaSans-Light";
+  color: #1b1b1b;
   letter-spacing: -0.2px;
+  white-space: nowrap;
 }
 
 /* -------------------------------- 3. Intro Section -------------------------------- */
@@ -996,6 +1006,7 @@
 
   .hero-content {
     padding-left: 0;
+    margin-left: 0;
     background: rgba(255, 255, 255, 0.8);
     padding: 22px;
     border-radius: 8px;
@@ -1048,14 +1059,17 @@
 
   .hero-title-top {
     font-size: 26px;
+    white-space: normal;
   }
 
   .hero-title-main {
     font-size: 48px;
+    white-space: normal;
   }
 
   .hero-subtitle {
     font-size: 15px;
+    white-space: normal;
   }
 
   .intro-section,
